@@ -1,0 +1,6 @@
+{
+  "name": "Minecraft Workbook Craft",
+  "description": "AI를 사용하여 마인크래프트 스타일의 문제집을 만들고 푸는 크래프팅 연구소",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
