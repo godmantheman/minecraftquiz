@@ -220,9 +220,9 @@ export default function App() {
     setIsCrafting(true);
     setCraftingError(null);
 
-    // Set a 6-second timeout controller to prevent infinite loading!
+    // Set a generous 45-second timeout controller to prevent infinite loading while giving Gemini plenty of time!
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 6000);
+    const timeoutId = setTimeout(() => controller.abort(), 45000);
 
     try {
       const response = await fetch('/api/generate-quiz', {
